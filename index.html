@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio website by pallab</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "OdrormX2u9fIoUt9B",
+            });
+        })();
+</script>
+</head>
+
+<body>
+
+    <!-- Navigation bar code -->
+
+    <header class="header">
+        <a href="#" class="logo">Pallab<span class="color">Duarah</span></a>
+        <i class="fa-solid fa-bars" id="menu"></i>
+        <nav class="navbar">
+            <a href="#Home" class="active">Home</a>
+            <a href="#About">About</a>
+            <a href="#Education">Education</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero or home section code -->
+
+    <section class="home" id="Home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Pallab Duarah</h1>
+            <h1>i'm a <span id="element"></span></h1>
+            <p>Hi, I’m Pallab Duarah, a Bachelor of Computer Applications (BCA) student at Sibsagar Commerce College,
+                Assam. I'm deeply passionate about technology, programming, and exploring how computers can solve
+                real-world problems. With a strong foundation in Python, and a growing interest in Java, web
+                development, and data structures, I’m steadily building my skills to become a full-stack developer.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/share/16YFtkRs4d/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_about.pallab?utm_source=qr&igsh=MWk1MWZoMmp1YWVhYg=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/pallab-duarah-770a80367?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/pallab_speaks?t=f7q0n83wNNmCEgVwgBQ_BQ&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <a href="My images/PALLAB-RESUME-2025.pdf" download="" class="btn">Download Resume</a>
+        </div>
+        <div class="my-img">
+            <img src="My images/Pallab-non-bg.png" alt="my photo">
+        </div>
+
+    </section>
+
+    <!-- About section code -->
+
+    <section class="about" id="About">
+        <div class="about-img">
+            <img src="My images/Pallab-non-bg.png">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span class="color">Me</span></h2>
+            <h3><span class="color">Frontend</span> Developer</h3>
+            <p>Hi, I’m Pallab Duarah, a Bachelor of Computer Applications (BCA) student at Sibsagar Commerce College,
+                Assam. I'm deeply passionate about technology, programming, and exploring how computers can solve
+                real-world problems. With a strong foundation in Python, and a growing interest in Java, web
+                development, and data structures, I’m steadily building my skills to become a full-stack developer.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+
+    </section>
+
+    <!-- Education section code -->
+
+    <section class="education" id="Education">
+        <h2 class="heading">My <span class="color">Education</span></h2>
+        <div class="education-container">
+            <div class="education-box">
+                <h3>Matriculation</h3>
+                <p>I had passed my Matriculation from A.H.D.H.S School in 2022 with aggregate of 383 marks which is 64% (First Division with 2 subject letter) .. My subjects are Assamese, English, IT/ITES, Social Science, General Sciecnce, General Mathematics.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="education-box">
+                <h3>Higher Secondary</h3>
+                <p>I had passed my Higher Secondary from A.H.D.H.S School in 2024 with aggregate of 379 marks(5 subjects) which is 75.8% (First Division with 2 subject letter) .. My subjects are Assamese, English, IT/ITES, Accountancy, Bussiness Studies, Economics.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="education-box">
+                <h3>Bachelor's</h3>
+                <p>Now i'm Persuing my B.C.A (Bachelor in Computer Application) 2nd year from Sibsagar Commerce College. Where i'm leaning new technologies in the industry like AI/ML, Web Development, Android Development etc..</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section code -->
+
+    <section class="contact" id="Contact">
+        <h2 class="heading">Contact <span class="color">Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Enter your name" id ="name-cus">
+                <input type="text" placeholder="Email Address" id="email-cus">
+
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Enter your ph. no">
+                <input type="text" placeholder="Email subject" id="subject-cus">
+            </div>
+
+            <textarea cols="30" rows="10" placeholder="Your Message" id="message-cus"></textarea>
+            <input type="submit" value="Send Message" class="btn" onclick ="sendEmail()">
+        </form>
+
+    </section>
+
+    <!-- footer Section code -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Copyright &copy; 2025 by @PallabDuarah | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#Home"><i class="fa-solid fa-angles-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Software Engineer', 'Android Developer', 'Python Developer', 'Java Developer', ' CS Student'],
+            typeSpeed: 70,
+            loop: true,
+            backSpeed: 70,
+            backDelay: 500,
+        });
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
